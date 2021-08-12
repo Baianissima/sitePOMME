@@ -4,19 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etape 02 - création sitePOMME</title>
 
-    <title>An Apple a Day</title>
+    <style>
+        body {
+            /* 10px c'est le margin du top : du haut de la page; margin auto met le margin automatiquement partout, 10 px 0 met le margin dans le sens des aiguilles de la montre : 10 cest sur le top et ZERO sur les 3 autres côtés*/
+            margin: 10px 0;
+            font: 0.8em 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background: #cf9;
+            /* cf9 est la réduction de la couleur #ccff99 */
+            text-align: center;
+        }
 
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">  -->
+        /* ça marche aussi simplement avec #container ici */
+        main#container {
+            margin: 0 auto;
+            width: 770px;
+            background: white;
+            border: 2px solid #ab4;
+            text-align: left;
+        }
 
-    <!-- <style>
-          @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+        h1#header {
+            height: 258px;
+            background: url(../img/apple.jpg) no-repeat left top;
+            /* il faut mettre margin0 ou 0 auto car le H1, qui est dans une image ici, met margin top et bottom automatiquement */
+            margin: 0;
+        }
+
+        footer {
+            height: 60px;
+            line-height: 60px;
+        }
+
     </style>
-   -->
 
-    <link rel="stylesheet" href="css/style.css">
+    
+
 
 </head>
 <body>
@@ -25,19 +49,18 @@
         <!-- en-tête de la page -->
         <header>
             <!-- ici le H1 est une image avec le titre -->
-            <h1 id="header" title="Colored Design : An Apple a Day Keep the Doctor Away"><a href="index.html">Colored Design</a>
-            </h1>
+            <h1 id="header" title="Colored Design : An Apple a Day Keep the Doctor Away">Colored Design</h1>
 
             <!-- navigation -->
             <nav>
                 <!-- ul>li*5>a{étape$} -->
-                <ul class="menu">
-                    <li><a href="etapes/01_etape.html">étape1</a></li>
-                    <li><a href="etapes/02_etape.html">étape2</a></li>
-                    <li><a href="">étape3</a></li>
-                    <li><a href="">étape4</a></li>
-                    <li><a href="">étape5</a></li>
-                </ul>                
+                <ul>
+                    <li><a href="01_etape.html">étape1</a></li>
+                    <li><a href="02_etape.html">étape2</a></li>
+                    <li><a href="03_etape.html">étape3</a></li>
+                    <li><a href="04_etape.html">étape4</a></li>
+                    <li><a href="05_etape.html">étape5</a></li>
+                </ul>
            </nav>
         </header>
 
