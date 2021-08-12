@@ -52,7 +52,7 @@ h1#header {
 
     background: url(../img/title.gif) no-repeat;
 
-   /* le text-indent négatif est fait pour cacher le texte au visiteur (il est hors de la page) mais il est lu par les moteurs de recherche, il est déclaé vers la gauche */     /* ici text-indent met un texte noir qui surposait le texte vert du fond sur limage : indent -5000 met le texte caché à gauche et laisse apparaitre le texte vert tout seul */ 
+    /* ici text-indent met un texte noir qui surposait le texte vert du fond sur limage : indent -5000 met le texte caché à gauche et laisse apparaitre le texte vert tout seul */ /* le text-indent négatif est fait pour cacher le texte au visiteur (il est hors de la page) mais il est lu par les moteurs de recherche, il est déclaé vers la gauche */
 
     text-indent: -5000px;
 }
