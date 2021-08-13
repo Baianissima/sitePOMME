@@ -14,10 +14,10 @@ body {
     text-align: center;
 }
 
-.menu {
+/* .menu {
     display: flex;
     
-}
+} */
 
 /* ça marche aussi simplement avec #container ici */
 main#container {
@@ -57,7 +57,102 @@ h1#header {
     text-indent: -5000px;
 }
 
+/* La navigation : la ul */
+
+nav ul {
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    background: url(../img/bg_menu.gif) repeat-x 0 -25px;
+    list-style: none;
+
+    /* 0 -25px pour decaler on peu vers la gauche */
+    /* repeat-x pour ne pas repeter l'image en horizontal, sur l'axe des abscisses; repeat-y pour ne pas repeter l'image en vertical */
+}
+
+/* /* ici on met le menu de la nav en ligne  */
+nav ul li {
+    float: left;
+    text-align: center;
+
+    /* j'ai cree cette classe et elle fait le même effet : 
+    .menu {
+    display: flex;}  */
+}
+
+/* ici on met le menu de la nav avec des espaces : on vise l element "a" qui est dans la li qui dans la ul qui est dans la nav */
+nav ul li a {
+    display: block;
+    width: 130px;
+    line-height: 20px;
+    border-right: 2px solid #cf9;
+    /* border-right met les border verticaux pour separer */
+
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+ 
+    /* letter spacing = ecartement entre les lettres */
+}
+
+nav ul li a:hover {
+    background: url("../img/bg_menu.gif") repeat-x 0 0;
+    /* ici on met le hover sur les a de la nav, sur le hover l'image se décale vers le bas
+     */
+}
+
+/* Le contenu principal dans la section */
+
+#principal {
+    padding: 0 30px 0 100px;
+
+    background-image: url("../img/bg_page.gif");
+    background-repeat: no-repeat;
+    /* background-position: 15px 15px; */
+    /* proprieté raccourci : background url('../img/bg_page.gif') no-repeat 15px 15px; */
+}
+#principal h2 {
+    padding-left: 25px;
+    background: url("../img/little_apple.gif") no-repeat left center;
+
+    color: #9b2;
+    font-size: 1.4em;
+    line-height: 25px;
+}
+
+#principal h3 {
+    margin-left: 15px;
+    padding-left: 5px;
+    border-bottom: 1px solid #9b2;
+    border-left: 1px solid #9b2;
+    /* Ici les borders mettent une barre longue horizontale et une petite vertical à gauche sur le h3 */
+
+    color: #9b2;
+}
+
+blockquote {
+    padding-left: 10px;
+    border-left: 5px solid #9b2;
+}
+
+#principal p {
+    line-height: 1.7em;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+/* pied de page */
+
 footer {
-    height: 60px;
-    line-height: 60px;
+    background: rgba(14, 173, 35, 0.61);
+}
+
+footer p {
+    margin: 0;
+    padding: 10px;
+
+    text-align: center;
+    line-height: 20px;
+    color: white;
 }
